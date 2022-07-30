@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="src/css/estilos.css">
 
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
 </head>
 <body>
 <header class="cabecalho">
@@ -23,70 +25,66 @@
 
 </header>
 <main class="pokemon-slider">
-    <button class="btn-seta">
+    <button class="btn-seta btn-voltar">
         <img src="src/imagens/seta.png" alt="seta voltar" srcset="">
     </button>
 
     <ul class="lista-pokemons">
-        <li>
-            <div>
-                <h2>Pikachu</h2>
-                <p>HP 300</p>
+        <li class="cartao selecionado fundo-1">
+            <div class="informacoes">
+                <h2 class="nome">Pikachu</h2>
+                <p class="vida">HP 300</p>
             </div>
 
-            <div>
-                <img src="src/imagens/pikachu.png" alt="Pikachu">
+            <div class="conteiner-imagem">
+                <img src="src/imagens/pikachu.png" alt="Pikachu" class="imagem-pokemon">
             </div>
 
-            <div>
-                <h3>Descrição</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas incidunt quos voluptates voluptatibus
-                    dignissimos facere quo neque est sapiente tempora et iure, fugiat similique eligendi debitis enim
-                    accusamus odio nemo.
+            <div class="descricao">
+                <h3 class="titulo">Descrição</h3>
+                <p class="texto">
+                    Os Pikachus são pequenos roedores de quarenta centímetros e de seis quilogramas, com um corpo redondo, pernas curtas e uma longa cauda, quando macho, a cauda tem um formato de um raio, mas se o Pikachu for fêmea sua cauda ganha um coração na ponta.
                 </p>
             </div>
         </li>
 
-        <!-- <li>
-            <div>
-                <h2>Charizard</h2>
-                <p>HP 800</p>
+        <li class="cartao fundo-2">
+            <div class="informacoes">
+                <h2 class="nome">Charizard</h2>
+                <p class="vida">HP 800</p>
             </div>
 
-            <div>
-                <img src="src/imagens/charizard.png" alt="Charizard">
+            <div class="conteiner-imagem">
+                <img src="src/imagens/charizard.png" alt="Charizard" class="imagem-pokemon">
             </div>
 
-            <div>
-                <h3>Descrição</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas incidunt quos voluptates voluptatibus
-                    dignissimos facere quo neque est sapiente tempora et iure, fugiat similique eligendi debitis enim
-                    accusamus odio nemo.
+            <div class="descricao">
+                <h3 class="titulo">Descrição</h3>
+                <p class="texto">
+                    Geralmente, um Charizard é competitivo. Ele adora a batalha e seu espírito competitivo também é notável, uma vez que nunca vai cuspir fogo em um inimigo mais fraco a menos que provocado ou ordenado. Quando fica muito irritado, as chamas em sua cauda se tornam branco-azuladas.
                 </p>
             </div>
         </li>
 
-        <li>
-            <div>
-                <h2>Mewtwo</h2>
-                <p>HP 800</p>
+        <li class="cartao fundo-3">
+            <div class="informacoes">
+                <h2 class="nome">Mewtwo</h2>
+                <p class="vida">HP 1200</p>
             </div>
 
-            <div>
-                <img src="src/imagens/mewtwo.png" alt="Mewtwo">
+            <div class="conteiner-imagem">
+                <img src="src/imagens/mewtwo.png" alt="Mewtwo" class="imagem-pokemon">
             </div>
 
-            <div>
-                <h3>Descrição</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas incidunt quos voluptates voluptatibus
-                    dignissimos facere quo neque est sapiente tempora et iure, fugiat similique eligendi debitis enim
-                    accusamus odio nemo.
+            <div class="descricao">
+                <h3 class="titulo">Descrição</h3>
+                <p class="texto">
+                    Mewtwo foi criado geneticamente em um laboratório, sendo um clone do misterioso antigo Pokémon Mew. É uma criatura com uma postura humanóide, mas tem algumas características felinas.
                 </p>
             </div>
-        </li> -->
+        </li>
+
+
     </ul>
 
     <button class="btn-seta">
@@ -97,5 +95,8 @@
 
 </html>
 
-<!--Ctrl + ;  = comenta -->
-<!--Ctrl + class = solicita criar a classe -->
+<!--
+#Ctrl + ;  = comenta 
+#Ctrl + class = solicita criar a classe 
+#getcsssacn site para obter sombras dos botoes
+-->

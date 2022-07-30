@@ -7,7 +7,7 @@ body {
 }
 
 .cabecalho{
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     justify-content: center;
     align-items: center; /* alinhar verticalmente*/
@@ -25,7 +25,7 @@ body {
 }
 
 .pokemon-slider {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,110 @@ body {
 }
 
 .lista-pokemons{
-    background: blue;
+    /*background: blue;*/
     width: 310px;
     height: 510px;
+    position: relative;
+}
+
+.btn-seta{
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px; /* arredondar a borda*/
+    border: 0; /* retirar o negrito preto da borda*/
+    cursor: pointer;  /* para quando o mouse passar por cima aparece uma mão*/
+    transition: background-color 0.2s ease-in-out; /* transição mais sutil*/
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar{
+    transform: rotate(180deg);
+}
+
+.btn-seta-:hover{
+    background-color: #8351fe; /* efeito de passar o mouse em cima e mudar a cor*/
+}
+
+.cartao{
+    /*opacity: 0;  o quanto de opacidade tera a imagem*/
+    background-color: blueviolet;
+    height: 100%;
+    display: flex; /*poe espacos e alinha os elementos ao lado do outro*/
+    flex-direction: column; /*informa a direcão para a separacao e alinhamento no caso coluna e nao linha*/
+    justify-content: space-between;/* calcula o espaco que sobre entre os elementos do cartao que esta sobrando e divide igualmente*/
+    position: absolute; 
+    padding: 12px; /* espacamento entra a borda e os elementos*/
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*sobreamento*/
+    transition: opacity 0.3s ease-in-out; /* transicao na opacidade*/
+}
+
+.cartao.selecionado{
+    opacity: 1;
+    z-index: 1; /* eixo de profundidade  para moviemtnar a cartao pra cima como se fosse um baralho*/
+}
+
+.fundo-1{
+    background: url(../imagens/fundo-card-1.jpg) no-repeat;
+}
+
+.fundo-2{
+    background: url(../imagens/fundo-card-2.jpg) no-repeat;
+}
+
+.fundo-3{
+    background: url(../imagens/fundo-card-3.jpg) no-repeat;
+}
+
+.cartao .informacoes{
+    background-color: rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px; /*8 pixels em cima e em baixo, 10 pixels lado e outro*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cartao .informacoes .nome{
+    color: #f1ecff;
+    font-size: 22px;
+}
+
+.cartao .informacoes .vida{
+    background: #333;
+    color: #f1ecff;
+    padding: 6px 10px;
+    border-radius:  20xp;
+}
+
+.cartao .conteiner-imagem{
+    text-align: center; /*alinha ao centro os elementos que estao dentro dessa div*/
+}
+.cartao .imagem-pokemon{
+    max-width: 100%; /*aproveitar o maximo da imagem em largura*/
+    max-height: 280px; /* aproveitar o maximo da imagem em altura sem estourar*/
+    padding: 20px; /*espacamento interno de todos os lados*/
+}
+
+.cartao .descricao{
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .descricao .titulo {
+    background-color: #333;
+    color: #f1ecff;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.cartao .descricao .texto {
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px; /*altura maxima do texto completo*/
+    overflow-y: auto;
 }
