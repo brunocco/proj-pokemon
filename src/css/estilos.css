@@ -1,0 +1,40 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-image: url(../imagens/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover ; /* cobrir todo espaco da tela */
+    min-height: 100vh;
+}
+
+.cabecalho{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* alinhar verticalmente*/
+    gap: 15px; /*separa a imagem e o titulo*/
+    padding-top: 50px;
+}
+
+.cabecalho .titulo{
+    color: #f1ecff;
+}
+
+.cabecalho .pokebola{
+    width: 25px;
+    height: 25px;
+}
+
+.pokemon-slider {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px; /*separa as imagens seta e o card*/
+    margin: 60px 0; /* cima e baixo 60px e laterais 0*/
+}
+
+.lista-pokemons{
+    background: blue;
+    width: 310px;
+    height: 510px;
+}

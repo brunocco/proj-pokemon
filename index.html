@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto Pokemon Slider</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="src/css/reseet.css">
+
+    <link rel="stylesheet" href="src/css/estilos.css">
+
 </head>
-<img>
-<header>
-    <img src="src/imagens/pokebola.png" alt="pokébola">
-    <h1>Pokédex</h1>
+<body>
+<header class="cabecalho">
+    <img src="src/imagens/pokebola.png" alt="pokébola" class="pokebola"/>
+    <h1 class="titulo">Pokédex</h1>
 
 </header>
-<main>
-    <button>
+<main class="pokemon-slider">
+    <button class="btn-seta">
         <img src="src/imagens/seta.png" alt="seta voltar" srcset="">
     </button>
 
-    <ul>
+    <ul class="lista-pokemons">
         <li>
             <div>
                 <h2>Pikachu</h2>
@@ -44,7 +48,7 @@
             </div>
         </li>
 
-        <li>
+        <!-- <li>
             <div>
                 <h2>Charizard</h2>
                 <p>HP 800</p>
@@ -82,13 +86,16 @@
                     accusamus odio nemo.
                 </p>
             </div>
-        </li>
+        </li> -->
     </ul>
 
-    <button>
+    <button class="btn-seta">
         <img src="src/imagens/seta.png" alt="seta avançar" srcset="">
     </button>
 </main>
 </body>
 
 </html>
+
+<!--Ctrl + ;  = comenta -->
+<!--Ctrl + class = solicita criar a classe -->
