@@ -5,3 +5,5 @@ Tecnologias:
 - Html
 - css
 - JavaScript
+
+https://brunocco.github.io/proj-pokemon/
