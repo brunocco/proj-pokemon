@@ -60,7 +60,7 @@ body {
 }
 
 .cartao{
-    /*opacity: 0;  o quanto de opacidade tera a imagem*/
+    opacity: 0;  /*o quanto de opacidade tera a imagem*/
     background-color: blueviolet;
     height: 100%;
     display: flex; /*poe espacos e alinha os elementos ao lado do outro*/
