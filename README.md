@@ -1,2 +1,7 @@
-# proj-pokemon
-Projeto criado durante imersão dev pro dos Gêmeos. Html  + css  entre outros
+# proj-pokemon (Pokédex Cards)
+Projeto produzido durante imersão dev pro dos Gêmeos. 
+
+Tecnologias:
+- Html
+- css
+- JavaScript
